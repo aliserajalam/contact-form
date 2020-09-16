@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  font-size: 0.9rem;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus {
+  font: inherit;
+  border: 0;
+  outline: 0;
+}
+
+#wrapper {
+  width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#background-text-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+#background-text {
+  font-size: 25rem;
+  color: #fff;
+  -webkit-text-fill-color: #fff; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000;
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  max-width: 960px;
+}
+
+#social-container {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  height: 350px;
+  padding: 1rem 1.5rem;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.35);
+}
+
+.social-icon {
+  color: #434445;
+  font-size: 1rem;
+}
+
+#form-container {
+  width: 55%;
+  flex-grow: 2;
+  background-color: #3e3f40;
+  padding: 3% 2%;
+  border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 28px 0px rgba(0, 0, 0, 0.35);
+}
+
+form {
+  background-color: #414243;
+  height: 100%;
+  padding: 8%;
+}
+
+.form-heading {
+  color: #e7eef3;
+  font-weight: 300;
+  margin-bottom: 0.7rem;
+}
+
+.form-info {
+  font-size: 0.75rem;
+  color: #cecece;
+  margin-bottom: 2rem;
+}
+
+.form-input {
+  width: 100%;
+  margin-bottom: 2rem;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid #818181;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  color: #fff;
+}
+
+#form-input-message {
+  resize: none;
+  margin-bottom: 0;
+}
+
+.message-limit {
+  margin-bottom: 2rem;
+  color: #818181;
+  font-size: 0.7rem;
+  text-align: right;
+}
+
+#form-button {
+  display: block;
+  width: 75%;
+  padding: 1rem 0;
+  font: inherit;
+  text-align: center;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+#map-container {
+  width: 55%;
+  max-width: 500px;
+  background-color: darkslateblue;
+  flex-grow: 3;
+  height: 350px;
+  -webkit-box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.35);
+  box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.35);
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}

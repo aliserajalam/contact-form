@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contact form</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="background-text-container">
+        <h1 id="background-text">Contact<br />Form</h1>
+      </div>
+      <div id="container">
+        <div id="social-container">
+          <a href="">
+            <i class="fab fa-facebook-f social-icon"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-twitter social-icon"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-instagram social-icon"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-dribbble social-icon"></i>
+          </a>
+          <a href="">
+            <i class="fab fa-behance social-icon"></i>
+          </a>
+        </div>
+        <div id="form-container">
+          <form action="">
+            <h1 class="form-heading">Get in touch</h1>
+            <p class="form-info">
+              Call or Email us regarding questions or issues
+            </p>
+            <input
+              class="form-input"
+              name="name"
+              placeholder="Name"
+              value=""
+              type="text"
+            />
+            <input
+              class="form-input"
+              name="phone"
+              placeholder="Phone no"
+              type="text"
+            />
+            <input
+              class="form-input"
+              name="email"
+              placeholder="Email address"
+              type="text"
+            />
+            <textarea
+              id="form-input-message"
+              class="form-input"
+              name="message"
+              placeholder="Message"
+              rows="3"
+              maxlength="180"
+            ></textarea>
+            <p class="message-limit">
+              <span id="message-limit-counter">180</span> characters left
+            </p>
+            <button id="form-button" type="submit">Send Message</button>
+          </form>
+        </div>
+        <div id="map-container">
+          <div id="map"></div>
+        </div>
+      </div>
+    </div>
+    <script
+      async
+      defer
+      src="https://kit.fontawesome.com/055a61164d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key={API_KEY}&callback=initMap"
+      type="text/javascript"
+    ></script>
+  </body>
+</html>
